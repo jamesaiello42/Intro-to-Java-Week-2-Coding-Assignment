@@ -8,10 +8,11 @@ public class Loops {
 		// I have added this to make grading easier
 		System.out.println("First Loop: ");
 		
-		// Prints from 0 to 100 
+		// Prints evens numbers from 0 to 100 
 		while (i >= 0 && i <= 100)
 		{
-			System.out.println(i);
+			if (i % 2 == 0)
+				System.out.println(i);
 			i++;
 		}
 		
@@ -51,10 +52,10 @@ public class Loops {
 				System.out.println("Hello");
 			else if (count % 5 == 0) 
 				System.out.println("World");
-			// This never print unless made into a separate new if statement
+			// This never prints unless made into a separate new if statement
 			else if (count % 3 == 0 && count % 5 == 0) 
 				System.out.println("HelloWorld");
-			// Print everything else
+			// Prints everything else
 			else 
 				System.out.println(count);
 		}
