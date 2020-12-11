@@ -48,13 +48,12 @@ public class Loops {
 		*/
 		for (int count = 0; count <= 100; count++)
 		{
-			if (count % 3 == 0) 
+			if (count % 3 == 0 && count % 5 == 0) 
+				System.out.println("HelloWorld");
+			else if (count % 3 == 0) 
 				System.out.println("Hello");
 			else if (count % 5 == 0) 
 				System.out.println("World");
-			// This never prints unless made into a separate new if statement
-			else if (count % 3 == 0 && count % 5 == 0) 
-				System.out.println("HelloWorld");
 			// Prints everything else
 			else 
 				System.out.println(count);
