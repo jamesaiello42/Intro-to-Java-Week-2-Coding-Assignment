@@ -22,8 +22,8 @@ public class Booleans {
 		*/
 		boolean shouldByIcecream = isHotOutside && (moneyInWallet > 0);
 		boolean willGoSwimming = isHotOutside && !isWeekday;
-		boolean isAGoodDay = isHotOutside && (moneyInWallet > 0);
-		boolean willBuyMilk = (thirstLevel >= 3) && (moneyInWallet >= 2 * costOfMilk);
+		boolean isAGoodDay = isHotOutside && (moneyInWallet > 0) && !isWeekday;
+		boolean willBuyMilk = isHotOutside && (thirstLevel >= 3) && (moneyInWallet >= 2 * costOfMilk);
 		
 	}
 
